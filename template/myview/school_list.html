@@ -1,0 +1,13 @@
+{% extends 'myview/myview_basic.html' %}
+
+{%block body_block%}
+  <!-- <h1>hi</h1> -->
+  <div class="jumbotron">
+    <div class="container">
+      {% for list in schools %}
+      <h1><a href="{{list.id}}">{{list.name}} </a></h1>
+      {% endfor %}
+    </div>
+  </div>
+
+{%endblock%}
